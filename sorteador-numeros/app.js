@@ -24,7 +24,7 @@ function obterNumeroAleatorio(min, max) {
 
 function alterarStatusBotaoReiniciar() {
     let botaoReiniciar = document.getElementById('btn-reiniciar');
-    
+
     if (botaoReiniciar.classList.contains('container__botao-desabilitado')) {
         botaoReiniciar.classList.remove('container__botao-desabilitado');
         botaoReiniciar.classList.add('container__botao');
@@ -37,7 +37,7 @@ function alterarStatusBotaoReiniciar() {
 function reiniciar() {
     document.getElementById('quantidade').value = '';
     document.getElementById('de').value = '';
-    document.getElementById('ate').value = '';    
+    document.getElementById('ate').value = '';
     document.getElementById('resultado').innerHTML = '<label class="texto__paragrafo">Números sorteados:  nenhum até agora</label>;';
     alterarStatusBotaoReiniciar();
 }
